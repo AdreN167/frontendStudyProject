@@ -1,0 +1,68 @@
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 147px;
+    z-index: 100;
+    /*width: 100% можно вместо right: 0*/
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+
+    }
+
+    &__container {
+        .container();
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    @supports (backdrop-filter: blur(10px)) {
+        & {
+          background-color: rgba(222, 222, 222, 0.50);
+          backdrop-filter: blur(10px);
+        }
+    }
+
+    &__logo {
+        flex-shrink: 0;
+        width: 202px;
+        height: 147px;
+    }
+
+    &__logo-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: baseline;
+        margin: 0 auto;
+    }
+
+    &__nav-link {
+        margin: 0 25px;
+        //color: @black;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    &__nav-link:hover {
+        color: @red;
+    }
+}

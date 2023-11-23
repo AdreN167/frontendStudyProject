@@ -1,0 +1,32 @@
+.reserve {
+    display: grid;
+    gap: 65px 11%;
+    grid-template-columns: 405px calc(89% - 405px);
+    grid-template-areas:
+        "cheaks scheme"
+        "order legend";
+    width: 100%;
+
+    &__cheaks {
+        grid-area: cheaks;
+    }
+
+    &__scheme {
+        grid-area: scheme;
+    }
+
+    &__order {
+        grid-area: order;
+    }
+
+    &__legend {
+        grid-area: legend;
+    }
+
+    & > div {
+        box-sizing: border-box;
+        padding: 10px;
+        background-color: coral;
+        text-align: center;
+    }
+}

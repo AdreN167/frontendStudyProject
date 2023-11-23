@@ -1,0 +1,25 @@
+.listing {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__events-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 -30px -120px;
+    }
+    &__card-event {
+        max-width: 405px;
+        width: calc(33.333% - 40px);
+        margin: 0 30px 120px;
+    }
+    &__event-card:nth-child(3n) {
+        margin-right: 0;
+    }
+}
