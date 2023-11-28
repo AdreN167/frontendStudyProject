@@ -37,15 +37,32 @@ img {
     height: auto;
     object-fit: cover;
 }
-
-button {
-    box-shadow: none;
-    outline: none;
+input,
+textarea,
+select {
+    box-shadow: none; // убрать тень
+    outline: none; // убрать внешний контур, который подсвечивает текущий элемент в фокусе
     color: @black;
     font-family: @font_open_sans;
+}
+textarea {
+    resize: none; // запретить пользователю изменять размер
+}
+input,
+textarea {
+    &::placeholder {
+        color: #6C6C6C;
+    }
+}
+input:focus,
+textarea:focus {
+    &::placeholder {
+        color: transparent;
+    }
+}
+button {
     cursor: pointer;
 }
-
 figcaption {
     color: @black_80;
     font-size: @font_size_s;
