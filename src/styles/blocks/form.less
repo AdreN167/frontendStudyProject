@@ -32,6 +32,9 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 25px;
+        &--mb7 {
+            margin-bottom: 7px;
+        }
     }
 
     &__check-list {
@@ -40,6 +43,8 @@
         align-items: flex-start;
         margin: 0 0 30px;
     }
+
+
 
     &__check {
         margin-bottom: 10px;
@@ -73,7 +78,9 @@
         transition: color 0.2s;
 
         &:hover {
-            color: @red;
+            @media(hover:hover) {
+                color: @red;
+            }
         }
     }
 }

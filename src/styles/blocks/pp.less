@@ -5,17 +5,16 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 90px 95px 50px;
-    background-color: rgba(28, 27, 27, 0.4);
-    backdrop-filter: blur(50px);
+    padding: 90px 50px 50px;
+    background-color: @gray;
     overflow-y: auto;
     z-index: 110;
     display: none;
 
-    @supports (backdrop-filter: blur(50px)) {
+    @supports (backdrop-filter: blur(25px)) {
         & {
-            background-color: rgba(28, 27, 27, 0.4);
-            backdrop-filter: blur(50px);
+            background-color: @black_40;
+            backdrop-filter: blur(25px);
         }
     }
 
@@ -44,7 +43,7 @@
 
     &__sticky-close {
         position: sticky;
-        top: 0;
+        top: -60px;
         align-self: flex-end;
         width: 0;
         height: 0;
@@ -67,11 +66,12 @@
         background-color: @black;
         text-transform: uppercase;
         font-weight: 400;
+        font-style: normal;
         font-family: @font_lora;
         font-size: 22px;
-        line-height: 1.36;
+        line-height: 30px;
         color: @white;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.02em; // задает промежутки между буквами
         z-index: 1;
     }
 }

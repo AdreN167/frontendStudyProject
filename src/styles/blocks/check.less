@@ -14,7 +14,7 @@
         .is-hidden();
 
         &:checked {
-            &~.check__mark {
+            &~.check__mark { // вот эта мешанина в начале означает "следующий элемент"
                 background-color: @black;
 
                 &::after {
