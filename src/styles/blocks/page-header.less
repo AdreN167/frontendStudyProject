@@ -28,10 +28,10 @@
         position: relative;
     }
 
-    @supports (backdrop-filter: blur(10px)) {
+    @supports (backdrop-filter: blur(20px)) {
         & {
-          background-color: rgba(222, 222, 222, 0.50);
-          backdrop-filter: blur(10px);
+          background-color: rgba(222, 222, 222, 0.70);
+          backdrop-filter: blur(20px);
         }
     }
 
@@ -64,5 +64,12 @@
 
     &__nav-link:hover {
         color: @red;
+    }
+
+    &__btn-container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 202px;
     }
 }
