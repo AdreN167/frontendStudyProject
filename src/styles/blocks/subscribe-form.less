@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: column;
     max-width: 410px;
-    width: 31.25%;
+    width: 100%;
+
+    font-family: @font_open_sans;
+    font-style: normal;
+    line-height: normal;
 
     &__field {
         display: flex;
@@ -12,12 +16,8 @@
         display: block;
         width: 100%;
         margin-bottom: 15px;
-        color: @black;
-        font-family: @font_open_sans;
         font-size: 16px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
     }
     &__field-input {
         box-sizing: border-box;
@@ -28,7 +28,6 @@
         border: none;
         background-color: @white;
         font-size: 14px;
-        line-height: 1.375;
     }
     &__send-btn {
         display: inline-block;
@@ -39,13 +38,10 @@
         height: 50px;
         background-color: @black;
         border: none;
-        color: @white;
-        font-family: @font_open_sans;
         font-size: 14px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
         text-decoration: none;
+        color: @white;
         cursor: pointer;
         transition: background-color 0.2s;
         &:hover {

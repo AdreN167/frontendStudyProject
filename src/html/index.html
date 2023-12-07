@@ -21,12 +21,14 @@
           </p>
         </header>
         <section class="offers home__offers"></section>
-        <section class="about home__about"></section>
+
+        @@include('blocks/about.html', {"class": "home__about"})
+
         <section class="upcoming home__upcoming"></section>
         <!-- prettier-ignore -->
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
-        <section class="contacts home__contacts"></section>
+        @@include('blocks/contacts.html', {"class": "home__contacts"})
 
         <div class="doit home__doit"></div>
       </div>
