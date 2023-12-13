@@ -1,12 +1,7 @@
 .listing {
-    box-sizing: border-box;
+    .container();
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1414px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
 
     &__events-list {
         display: flex;
@@ -16,21 +11,9 @@
     }
     &__card-event {
         max-width: 405px;
-        width: calc(33.333% - 40px);
+        width: calc(33.333% - 60px);
         margin: 0 30px 120px;
-        /*&--ml0 {
-            margin-left: 0;
-        }
-        &--mr0 {
-            margin-right: 0;
-        }
-        &:nth-child(2) {
-            margin-left: 0;
-            margin-right: 0;
-        }*/
-    }
-    &__event-card:nth-child(3n) {
-        margin-right: 0;
+
     }
     &__link {
         align-self: end;

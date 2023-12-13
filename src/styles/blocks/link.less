@@ -11,11 +11,16 @@
 
     &:hover {
         @media (hover: hover) {
-            color: @red;
+            color: @red_dark;
         }
     }
     &:active {
-        color: @red;
+        color: @red_dark;
+    }
+    &--vertical {
+        flex-direction: column;
+        height: 132px;
+        width: 128px;
     }
     &__name,
     &__icon {

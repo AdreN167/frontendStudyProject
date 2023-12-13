@@ -25,14 +25,16 @@
         font-size: 0;
         text-decoration: none;
         overflow: hidden;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 107.16%;
+        }
     }
 
-    &__picture::after {
-        content: "";
-        display: block;
-        width: 100%;
-        padding-top: 107.16%;
-    }
+
 
     &__picture-img {
         display: block;
