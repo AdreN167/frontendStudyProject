@@ -1,0 +1,17 @@
+.arrow {
+    width: 92px;
+    height: 62px;
+    transition: color 0.2s;
+
+    @media(hover:hover) {
+        &:hover {
+            color: @red;
+        }
+    }
+    &--rotate180 {
+        transform: rotate(180deg);
+    }
+    &__icon {
+        cursor: pointer;
+    }
+}

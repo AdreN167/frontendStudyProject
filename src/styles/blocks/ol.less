@@ -1,0 +1,25 @@
+.ol {
+
+    position: relative;
+    padding: 0;
+    list-style: none;
+    font-family: @font_open_sans;
+    counter-reset: li;
+
+    &__item {
+        margin: 0 0 8px;
+        counter-increment: li;
+
+        &::before {
+            content: counter(li) + ". ";
+            box-sizing: border-box;
+            display: inline-block;
+            min-width: 20px;
+            white-space: pre;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

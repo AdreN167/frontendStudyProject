@@ -1,0 +1,31 @@
+.ul {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    font-family: @font_open_sans;
+
+    &__item {
+        box-sizing: border-box;
+        position: relative;
+        margin: 0 0 8px;
+        padding-left: 20px;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: @red;
+            pointer-events: none;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}

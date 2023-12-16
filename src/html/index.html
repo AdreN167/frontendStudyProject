@@ -20,18 +20,24 @@
             для людей, горящих сердцем и делом место для настоящего
           </p>
         </header>
-
+        <!-- prettier-ignore -->
         @@include('blocks/offers.html', {"class": "home__offers"})
 
         @@include('blocks/about.html', {"class": "home__about"})
 
-        <section class="upcoming home__upcoming"></section>
-        <!-- prettier-ignore -->
+        @@include('blocks/upcoming.html', {"class": "home__upcoming"})
+
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
         @@include('blocks/contacts.html', {"class": "home__contacts"})
 
-        <div class="doit home__doit"></div>
+        <div class="doit home__doit">
+          <div class="doit__container">
+            <p class="doit__text">
+              Просто делайте, что нравится, а мы вам поможем
+            </p>
+          </div>
+        </div>
       </div>
     </main>
 

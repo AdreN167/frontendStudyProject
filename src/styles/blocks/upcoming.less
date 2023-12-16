@@ -1,0 +1,89 @@
+.upcoming {
+    padding: 100px 0 55px 0;
+    background-color: @white;
+
+    &__container {
+        .container();
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top-border {
+        position: relative;
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            top: -130px;
+            display: block;
+            width: 0;
+	        height: 0;
+        }
+        &::before {
+            border-bottom: 30px solid @white;
+	        border-right: 33.3333vw solid transparent;
+        }
+        &::after {
+            right: 0;
+            border-bottom: 30px solid @white;
+	        border-left: 66.6666vw solid transparent;
+        }
+    }
+    &__bottom-border {
+        position: relative;
+
+        &::before,
+        &::after{
+            content: "";
+            position: absolute;
+            top: 55px;
+            display: block;
+            width: 0;
+	        height: 0;
+        }
+        &::before {
+            border-top: 30px solid @white;
+	        border-right: 66.6666vw solid transparent;
+        }
+        &::after {
+            right: 0;
+            border-top: 30px solid @white;
+	        border-left: 33.3333vw solid transparent;
+        }
+    }
+    &__listing {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 70px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 525px;
+        width: 100%;
+    }
+    &__slider-blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100px;
+        width: 100%;
+    }
+    &__slider-block {
+        height: 2px;
+        width: 15px;
+        border-radius: 2px;
+        background-color: @gray_dark;
+        &--black {
+            background-color: @black;
+        }
+    }
+    &__link {
+        align-self: flex-end;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+}
