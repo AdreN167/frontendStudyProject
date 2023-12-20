@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 0; // чтобы убрать кликабельность между названием ссылки и иконкой
     font-weight: 600;
     font-size: 16px;
     color: @black;
@@ -21,6 +20,9 @@
         flex-direction: column;
         height: 132px;
         width: 128px;
+    }
+    &--h0 {
+        height: 0; // чтобы убрать кликабельность между названием ссылки и иконкой
     }
     &__name,
     &__icon {
