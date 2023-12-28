@@ -5,14 +5,17 @@
     border: none;
     transition: color 0.2s;
 
-    @media(hover:hover) {
-        &:hover {
+
+    &:hover {
+        @media(hover:hover) {
             color: @red;
         }
     }
+
     &--rotate180 {
         transform: rotate(180deg);
     }
+
     &__icon {
         cursor: pointer;
     }

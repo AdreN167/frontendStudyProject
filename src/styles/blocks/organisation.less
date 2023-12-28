@@ -1,16 +1,35 @@
-.contacts {
+.organisation {
     &__container {
         .container();
     }
     &__wrapper {
         display: flex;
-        justify-content: space-between;
 
     }
     &__items {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
+
+        @media @bw1020 {
+            flex-wrap: wrap;
+        }
+    }
+    &__item {
+        margin: 0 auto;
+        @media @bw1020 {
+            margin-bottom: 50px;
+        }
+        @media @bw650 {
+            margin-bottom: 40px;
+        }
+        &:last-child {
+            @media @bw1020 {
+                margin: 0 auto;
+            }
+            @media @bw650 {
+                margin-bottom: 0;
+            }
+        }
     }
     &__picture {
         position: relative;

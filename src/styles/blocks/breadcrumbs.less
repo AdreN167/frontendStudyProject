@@ -28,11 +28,17 @@
             width: 0; // чтобы не было pointer при наведении
             pointer-events: none;
         }
+
+
         &:hover {
-            color: @red;
+            @media(hover:hover) {
+                color: @red;
+            }
         }
+
         &:last-child {
             margin-right: 0;
+
             &:after {
                 display: none;
             }
