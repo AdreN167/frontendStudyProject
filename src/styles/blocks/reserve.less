@@ -6,17 +6,40 @@
         "cheaks scheme"
         "order legend";
     width: 100%;
-    max-width: 1414px;
+
+    @media @bw1340 {
+        gap: 65px 6.5%;
+        grid-template-columns: 340px calc(93.5% - 340px);
+    }
+
+    @media @bw1020 {
+        gap: 60px;
+        grid-template-columns: auto 390px;
+        grid-template-areas:
+            "scheme scheme"
+            "cheaks legend"
+            "cheaks order";
+    }
+
+    @media @bw768 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "scheme"
+            "legend"
+            "cheaks"
+            "order";
+    }
 
     &__cheaks {
         grid-area: cheaks;
 
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
     }
 
     &__check {
-        margin-bottom: 11px;
+        margin-bottom: 10px;
 
         &:last-child {
             margin-bottom: 0;
@@ -40,12 +63,20 @@
 
         display: flex;
         flex-direction: column;
-        align-items: end;
+        align-items: flex-end;
+
+        @media @bw768 {
+            align-items: flex-start;
+        }
     }
 
     &__section-title {
         font-size: 18px;
         margin: 0 0 20px;
+
+        @media @bw768 {
+            font-size: 16px;
+        }
 
         &--mb30 {
             margin-bottom: 30px
@@ -54,6 +85,10 @@
         &--note {
             font-weight: 600;
             text-align: right;
+
+            @media @bw768 {
+                text-align: left;
+            }
         }
     }
 
@@ -110,9 +145,14 @@
         align-items: center;
         margin: 0 0 15px;
 
+        @media @bw768 {
+            font-size: 14px;
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
+
     }
 
     &__qty {
@@ -120,6 +160,7 @@
             content: " " attr(data-caption) " | " attr(data-price) " " attr(data-currency);
         }
     }
+
     &__sum {
         font-size: 18px;
         font-weight: 600;
@@ -130,6 +171,7 @@
             font-size: 0.95em;
         }
     }
+
     &__total {
         margin: 25px 0 0;
         text-align: center;
@@ -141,6 +183,7 @@
             content: attr(data-caption);
             margin-right: 30px;
         }
+
         &::after {
             content: attr(data-currency);
             margin-left: 4px;
@@ -149,27 +192,62 @@
     }
 
     &__submit {
-        margin-top: 53px
-    }
+        margin-top: 53px;
 
-    &__tickets-mark {
-        align-self: center;
-        margin-right: 9px;
-        width: 24px;
-        height: 24px;
-        background-color: @red;
+        @media @bw1340 {
+            margin-top: 45px
+        }
 
-        &--black {
-            background-color: @black;
+        @media @bw768 {
+            margin-top: 40px
         }
     }
 
-    &__qty-legend {
+    &__price-list {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin-bottom: 37px;
+
+        @media @bw768 {
+            align-items: flex-start;
+        }
+    }
+
+    &__price-item {
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 15px;
+        padding-left: 34px;
+        padding-top: 2px;
+        min-height: 24px;
         font-size: 14px;
         font-weight: 400;
 
         &::before {
-            content: attr(data-price) " " attr(data-currency) " | ";
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+            background-color: @black;
+        }
+
+        &::after {
+            content: attr(data-caption);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &--red {
+            &::before {
+                background-color: @red;
+            }
         }
     }
 

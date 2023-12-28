@@ -10,6 +10,10 @@
     color: @black;
     cursor: pointer;
 
+    &--pt0 {
+        padding-top: 0;
+    }
+
     &__input {
         .is-hidden();
 
@@ -50,9 +54,18 @@
         font-size: 16px;
         line-height: 22px;
 
+        @media @bw768 {
+            font-size: 14px;
+        }
+
         &--s {
             font-size: 14px;
             line-height: 19px;
+
+            @media @bw600 {
+                font-size: 12px;
+                line-height: 13px;
+            }
         }
     }
 
