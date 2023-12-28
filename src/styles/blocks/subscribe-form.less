@@ -1,16 +1,20 @@
 .subscribe-form {
     display: flex;
     flex-direction: column;
-    max-width: 410px;
     width: 100%;
-
     font-family: @font_open_sans;
     font-style: normal;
     line-height: normal;
 
+    @media @bw360 {
+        margin-left: -20px;
+        width: calc(100% + 40px);
+    }
+
     &__field {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
     &__field-label {
         display: block;
@@ -19,6 +23,11 @@
         font-size: 16px;
         font-weight: 600;
 
+        @media @bw768 {
+            text-align: center;
+
+        }
+
         @media @bw600 {
             font-size: 13px;
         }
@@ -26,7 +35,7 @@
     &__field-input {
         box-sizing: border-box;
         display: block;
-        flex-grow: 1;
+        width: 67.0732%;
         height: 50px;
         padding: 15px 28px;
         border: none;
@@ -36,13 +45,25 @@
         @media @bw600 {
             font-size: 12px;
         }
+
+        @media @bw360 {
+            max-width: 204px;
+        }
     }
+
+    &__check {
+        @media @bw360 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+
     &__send-btn {
         display: inline-block;
         box-sizing: border-box;
         margin-bottom: 15px;
         padding: 15px 23px;
-        width: 135px;
+        width: 32.9268%;
         height: 50px;
         background-color: @black;
         border: none;
@@ -52,6 +73,15 @@
         color: @white;
         cursor: pointer;
         transition: background-color 0.2s;
+
+        @media @bw600 {
+            font-size: 12px;
+        }
+
+        @media @bw360 {
+            min-width: 116px;
+        }
+
         &:hover {
             background-color: @red_dark;
         }
