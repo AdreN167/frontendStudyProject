@@ -1,8 +1,16 @@
 .home {
     padding: 100px 0;
 
+    @media @bw1020 {
+        padding-top: 80px;
+    }
+
     &__listing {
-        margin-bottom: 95px;
+        margin-bottom: 85px;
+
+        @media @bw1020 {
+            margin-bottom: 60px;
+        }
     }
     &__offers {
         margin-bottom: 200px;
@@ -12,6 +20,10 @@
     }
     &__upcoming {
         margin-bottom: 95px;
+
+        @media @bw1020 {
+            margin-bottom: 65px;
+        }
     }
     &__contacts {
         margin-bottom: 150px;

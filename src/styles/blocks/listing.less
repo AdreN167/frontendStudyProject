@@ -74,5 +74,57 @@
         align-self: end;
         padding: 15px 0px 15px 40px;
         margin-top: 70px;
+
+        @media @bw1660 {
+            margin-top: 60px;
+        }
+
+        @media @bw1020 {
+            margin-top: 40px;
+        }
+
+        @media @bw600 {
+            margin-top: 50px;
+            font-size: 14px;
+        }
+    }
+
+    &__article-card {
+        margin-top: 120px;
+
+        @media @bw1020 {
+            margin-top: 80px;
+        }
+
+        @media @bw600 {
+            margin-top: 120px;
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            margin: 0 auto 60px;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: 1254px;
+            height: 1px;
+            background-color: @black;
+            pointer-events: none;
+
+            @media @bw1020 {
+                margin: 0 auto 50px;
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+
+            &::before {
+                display: none;
+            }
+        }
     }
 }
