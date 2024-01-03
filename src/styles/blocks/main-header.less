@@ -1,5 +1,5 @@
 .main-header {
-    padding-bottom: 100px;
+    overflow: hidden;
 
     &__title,
     &__text {
@@ -15,19 +15,12 @@
             font-size: 35px;
         }
 
-        @media @bw1340 {
-            //padding-left: 30px;
-            //padding-right: 30px;
-        }
-
         @media @bw1020 {
             font-size: 30px;
         }
 
         @media @bw768 {
             font-size: 25px;
-            //padding-left: 20px;
-            //padding-right: 20px;
         }
 
         @media @bw600 {
@@ -63,8 +56,20 @@
         position: relative;
         width: 100%;
 
+        @media @bw1660 {
+            width: 113.2835%;
+            margin-left: -6.64175%;
+        }
+
         @media @bw1020 {
             margin-bottom: 50px;
+            margin-left: -13.47655%;
+            width: 126.9531%;
+        }
+
+        @media @bw650 {
+            margin-left: -18.28125%;
+            width: 136.5625%;
         }
 
         @media @bw500 {
