@@ -6,17 +6,43 @@
         display: flex;
         justify-content: space-between;
 
+        @media @bw1020 {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     &__items {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 15px 0;
+
+        @media @bw1020 {
+            flex-direction: row;
+            order: 1;
+            padding: 0;
+            width: 100%;
+        }
+
+        @media @bw650 {
+            flex-direction: column;
+        }
     }
     &__picture {
         position: relative;
         display: block;
+        //width: 56.3718%;
         width: 752px;
+
+        @media @bw1020 {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+
+        @media @bw650 {
+            margin-bottom: 60px;
+        }
+
         &::before {
             content: "";
             display: block;
