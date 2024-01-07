@@ -7,11 +7,19 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media @bw768 {
+            flex-direction: column;
+        }
     }
 
     &__field,
     &__group {
         width: 100%;
+
+        @media @bw768 {
+            width: 100%;
+        }
 
         &--w50 {
             width: calc(50% - 30px);
@@ -57,9 +65,17 @@
     &__btns {
         display: flex;
         align-items: center;
+
+        @media @bw768 {
+            flex-direction: column;
+        }
     }
 
     &__submit {
+        @media @bw768 {
+            margin-bottom: 30px;
+            width: 100%;
+        }
         &--w50 {
             width: calc(50% - 30px);
         }
