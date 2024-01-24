@@ -1,4 +1,7 @@
 .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     padding: 0;
     width: 92px;
     height: 62px;
@@ -6,6 +9,10 @@
     border: none;
     transition: color 0.2s;
 
+    @media @bw1020 {
+        width: 67px;
+        height: 40px;
+    }
 
     &:hover {
         @media(hover:hover) {
@@ -13,11 +20,20 @@
         }
     }
 
+    &--vertical {
+        justify-content: flex-start;
+        transform: rotate(90deg);
+    }
     &--rotate180 {
         transform: rotate(180deg);
     }
 
     &__icon {
         cursor: pointer;
+
+        @media @bw1020 {
+            width: 67px;
+            height: 40px;
+        }
     }
 }

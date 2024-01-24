@@ -11,6 +11,15 @@
     </div>
     <div class="about__block2">
       <picture class="about__picture">
+        <source
+          media="(max-width: 450px)"
+          type="image/webp"
+          srcset="assets/images/about/about1_phone.webp"
+        />
+        <source media="(max-width: 450px)" srcset="assets/images/about/about1_phone.jpg"/>
+
+        <source type="image/webp" srcset="assets/images/about/about1.webp"/>
+
         <img src="assets/images/about/about1.jpg" class="about__img" alt="about1" />
       </picture>
       <picture class="about__picture2">
@@ -27,6 +36,15 @@
     </div>
     <div class="about__block3">
       <picture class="about__picture3">
+        <source
+          media="(max-width: 450px)"
+          type="image/webp"
+          srcset="assets/images/about/about3_phone.webp"
+        />
+        <source media="(max-width: 450px)" srcset="assets/images/about/about3_phone.jpg"/>
+
+        <source type="image/webp" srcset="assets/images/about/about3.webp"/>
+
         <img src="assets/images/about/about3.jpg" class="about__img2" alt="about3" />
       </picture>
       <div class="about__block3-wrapper">
@@ -36,7 +54,7 @@
         </p>
         <a href="#" class="about__link link link--h0">
           <span class="link__name"> Смотреть </span>
-          <div class="about__arrow arrow">
+          <div class="link__arrow arrow">
             <svg class="arrow__icon" width="91" height="60">
               <use xlink:href="assets/icons/symbols.svg#link"></use>
             </svg>

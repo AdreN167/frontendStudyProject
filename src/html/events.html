@@ -72,17 +72,17 @@
           </div>
           <a href="#" class="events__link link link--vertical">
             <span class="link__name">Показать еще</span>
-            <svg class="link__icon" width="62" height="92">
-              <use xlink:href="assets/icons/symbols.svg#vertical_link"></use>
-            </svg>
+            <div class="link__arrow arrow arrow--vertical">
+              <svg class="arrow__icon" width="91" height="60">
+                <use xlink:href="assets/icons/symbols.svg#link"></use>
+              </svg>
+            </div>
           </a>
         </section>
 
         <section class="tariff events__tariff">
           <div class="tariff__container">
-            <h2 class="tariff__title title">
-              Дополнительные услуги
-            </h2>
+            <h2 class="tariff__title title">Дополнительные услуги</h2>
 
             <p class="tariff__description">
               Перед запуском проекта, мы подготавливаем подробную смету и
@@ -92,7 +92,7 @@
               мероприятия на высшем уровне.
             </p>
 
-            <table class="events__tariffs-table  table">
+            <table class="events__tariffs-table table">
               <thead class="table__head">
                 <tr class="table__head-tr">
                   <th class="table__th table__th--hidden"></th>
@@ -115,7 +115,7 @@
                     <span class="ok"></span>
                   </td>
                   <td class="table__td">
-                     <span class="ok"></span>
+                    <span class="ok"></span>
                   </td>
                 </tr>
                 <tr class="table__tr">
@@ -135,38 +135,38 @@
                   <td class="table__td"></td>
                   <td class="table__td"></td>
                   <td class="table__td">
-                      <span class="ok"></span>
-                   </td>
-                 </tr>
-                 <tr class="table__tr">
-                   <th class="table__body-th">Организация питания</th>
-                   <td class="table__td"></td>
-                   <td class="table__td">
-                     <span class="ok"></span>
-                   </td>
-                   <td class="table__td">
-                     <span class="ok"></span>
-                   </td>
-                 </tr>
-                 <tr class="table__tr">
-                   <th class="table__body-th">Декор</th>
-                   <td class="table__td"></td>
-                   <td class="table__td"></td>
-                   <td class="table__td">
-                     <span class="ok"></span>
-                    </td>
-                  </tr>
-                  <tr class="table__tr">
-                    <th class="table__body-th">Звуковое сопровождение</th>
-                    <td class="table__td"></td>
-                    <td class="table__td">
-                      <span class="ok"></span>
-                    </td>
-                    <td class="table__td">
-                      <span class="ok"></span>
-                    </td>
-                  </tr>
-                  <tr class="table__tr">
+                    <span class="ok"></span>
+                  </td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__body-th">Организация питания</th>
+                  <td class="table__td"></td>
+                  <td class="table__td">
+                    <span class="ok"></span>
+                  </td>
+                  <td class="table__td">
+                    <span class="ok"></span>
+                  </td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__body-th">Декор</th>
+                  <td class="table__td"></td>
+                  <td class="table__td"></td>
+                  <td class="table__td">
+                    <span class="ok"></span>
+                  </td>
+                </tr>
+                <tr class="table__tr">
+                  <th class="table__body-th">Звуковое сопровождение</th>
+                  <td class="table__td"></td>
+                  <td class="table__td">
+                    <span class="ok"></span>
+                  </td>
+                  <td class="table__td">
+                    <span class="ok"></span>
+                  </td>
+                </tr>
+                <tr class="table__tr">
                   <th class="table__body-th">Дополнительное освещение</th>
                   <td class="table__td"></td>
                   <td class="table__td"></td>
@@ -180,18 +180,18 @@
                   <td class="table__td"></td>
                   <td class="table__td"></td>
                   <td class="table__td">
-                   <span class="ok"></span>
+                    <span class="ok"></span>
                   </td>
                 </tr>
               </tbody>
 
               <tfoot class="table__footer">
-                 <tr class="table__footer-tr">
-                   <th class="table__footer-th"></th>
-                   <th class="table__footer-th">Тариф «Light»</th>
-                   <th class="table__footer-th">Тариф «Promo»</th>
-                   <th class="table__footer-th">Тариф «All stars»</th>
-               </tr>
+                <tr class="table__footer-tr">
+                  <th class="table__footer-th"></th>
+                  <th class="table__footer-th">Тариф «Light»</th>
+                  <th class="table__footer-th">Тариф «Promo»</th>
+                  <th class="table__footer-th">Тариф «All stars»</th>
+                </tr>
               </tfoot>
             </table>
           </div>
@@ -202,18 +202,17 @@
         <section class="organisation events__organisation">
           <div class="organisation__container">
             <div class="organisation__items">
-
               <div class="organisation__item organisation-item">
                 <div class="organisation-item__img">
                   <svg class="organisation-item__icon" width="24" height="24">
-                    <use xlink:href="assets/icons/symbols.svg#information"></use>
+                    <use
+                      xlink:href="assets/icons/symbols.svg#information"
+                    ></use>
                   </svg>
                 </div>
                 <div class="organisation-item__content">
                   <h4 class="organisation-item__title">Цены</h4>
-                  <p
-                    class="organisation-item__info"
-                  >
+                  <p class="organisation-item__info">
                     Цены, указанные на сайте носят информационный характер. Мы
                     придерживаемся индивидуального подхода в работе с клиентом.
                   </p>
@@ -230,14 +229,10 @@
                   <p class="organisation-item__info">
                     Отдел организации мероприятий
                   </p>
-                  <a
-                    href="tel:+74993500730"
-                    class="organisation-item__info"
+                  <a href="tel:+74993500730" class="organisation-item__info"
                     >+7 499 350 0730</a
                   >
-                  <a
-                    href="mailto:hi@tagree.ru"
-                    class="organisation-item__info"
+                  <a href="mailto:hi@tagree.ru" class="organisation-item__info"
                     >hi@tagree.ru</a
                   >
                 </div>
@@ -250,9 +245,7 @@
                 </div>
                 <div class="organisation-item__content">
                   <h4 class="organisation-item__title">Отдел мероприятий</h4>
-                  <p
-                    class="organisation-item__info"
-                  >
+                  <p class="organisation-item__info">
                     Мы имеем все возможности для того, чтобы помочь как малому
                     бизнесу и молодым талантам, так и большим корпорациям и
                     холдингам.
