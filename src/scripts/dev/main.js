@@ -39,22 +39,13 @@
         document.addEventListener("keyup", closeEventPP);
         eventPP.addEventListener("click", closeEventPP);
     })
-
-    //     eventOpenBtn.addEventListener("click", function () {
-    //       root.classList.add("show-event-popup");
-    //     });
-
-    //     eventPP.addEventListener("click", function(event) {
-    //         if (event.target === this || event.target.classList.contains("js-eventCloseBtn")) {
-    //             root.classList.remove("show-event-popup");
-    //         }
-    //     });
-    //   }
-
-    //   document.addEventListener("keyup", function(event) {
-    //     if (event.key === "Escape" || event.keyCode === 27) {
-    //         root.classList.remove("show-event-popup");
-    //     }
-    //   })
   }
+
+  const swipers = root.querySelectorAll(".js-swiper");
+
+  swipers.forEach(function (swpr) {
+    new Swiper(swpr, {
+        //updateOnWindo
+    });
+  });
 })();
