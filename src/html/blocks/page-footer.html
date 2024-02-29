@@ -11,23 +11,30 @@
         <a href="#" class="page-footer__nav-link">Контакты</a>
       </nav>
 
-      <form class="page-footer__subscribe-form subscribe-form">
+      <form
+        action="https://jsonplaceholder.typicode.com/posts"
+        class="page-footer__subscribe-form subscribe-form"
+        id="js-subscribeForm"
+      >
         <div class="subscribe-form__field">
           <span class="subscribe-form__field-label"
             >Подпишись и будь в курсе происходящего</span
           >
 
-          <input
-            class="subscribe-form__field-input"
-            type="email"
-            placeholder="Email"
-            name="email"
-            required
-          />
+          <div class="subscribe-form__wrapper">
+            <input
+              id="js-subscribeEmail"
+              class="subscribe-form__field-input"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
 
-          <button class="subscribe-form__send-btn" type="submit" name="send">
-            Подписаться
-          </button>
+            <button class="subscribe-form__send-btn" type="submit" name="send">
+              Подписаться
+            </button>
+          </div>
         </div>
 
         <label class="check check--pt0 subscribe-form__check">
