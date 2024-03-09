@@ -41,6 +41,14 @@
     });
   }
 
+  // Валидация формы
+  const eventForm = $("#js-eventForm");
+  if (eventForm.length) {
+    eventForm.validate({
+      errorElement: "span",
+    });
+  }
+
   // Слайдер
   const swipers = document.querySelectorAll(".js-swiper");
   swipers.forEach(function (swpr) {
@@ -332,14 +340,6 @@
     };
     $.each(dateField, function (i) {
       pickerInit($(this));
-    });
-  }
-
-  // Валидация формы
-  const eventForm = $("#js-eventForm");
-  if (eventForm.length) {
-    eventForm.validate({
-      errorElement: "span",
     });
   }
 
